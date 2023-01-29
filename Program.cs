@@ -1,18 +1,14 @@
-﻿using System;
-namespace CSharp
-{
-    class CProgram
-    {
-        static void Main(string[]args)
-        {
-            int[] list=new int[] {8,6,4,5,7,2,1,3};
-            System.Console.WriteLine("The array in ascending order");
-            Array.Sort(list);
-            foreach (int i in list)
-            {
-                Console.Write(i +" ");
-            }
-        }
-    }
-}
-
+﻿using System;  
+  public class FactorialExample  
+   {  
+     public static void Main(string[] args)  
+      {  
+       int i,fact=1,number;      
+       Console.Write("Enter any Number: ");      
+       number= Convert.ToInt32(Console.ReadLine());     
+       for(i=1;i<=number;i++){      
+        fact=fact*i;      
+       }      
+       Console.Write("Factorial of " +number+" is: "+fact);    
+     }  
+  }  
